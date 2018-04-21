@@ -1,0 +1,238 @@
+/*
+Author: Aristech
+Author URL: http://aristech.gr
+*/
+
+/* remove this */
+.page-one-column .panel-content .wrap {
+    max-width: 100% !important;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.booking_room {
+    flex: 100%;
+    padding: 2%;
+    text-align: center;
+
+}
+.span1_of_1 {
+    display: flex;
+    flex: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8% 0% 1% 1%;
+}
+input.btn-booking {
+    padding: 1.2em;
+    margin-bottom: 1em;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) and (max-width: 720px)  {
+/* Styles */
+.booking_room {
+    flex: 100%;
+    padding: 2%;
+    text-align: center;
+    background: cadetblue;
+    color: #fff;
+}
+.span1_of_1 {
+    display: flex;
+    flex: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8% 0% 1% 1%;
+}
+input.btn-booking {
+    padding: 1.2em;
+    margin-bottom: 1em;
+}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (min-width : 320px) and (max-width: 720px)  {
+/* Styles */
+.booking_room {
+    flex: 100%;
+    padding: 2%;
+    text-align: center;
+    background: cadetblue;
+    color: #fff;
+}
+.span1_of_1 {
+    display: flex;
+    flex: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8% 0% 1% 1%;
+}
+input.btn-booking {
+    padding: 1.2em 8em;
+    margin-bottom: 1em;
+}
+}
+
+@media only screen 
+and (min-width: 721px) and (max-width: 960px)  {
+    .span1_of_1 {
+        display: flex;
+        flex: 22%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 0% 1% 1%;
+    }
+    .booking_room {
+        flex: 38%;
+        padding: 2%;
+        text-align: center;
+        background: cadetblue;
+        color: #fff;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 960px) {
+/* Styles */
+    .span1_of_1 {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 0% 1% 1%;
+    }
+    .booking_room {
+        flex: 1;
+        padding: 2%;
+        text-align: center;
+    }
+    .booking-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 8em;
+    }
+    .booking_room.medium {
+        padding: 1em 0 0;
+    }
+    .span1_of_1.medium {
+        margin: 0 1em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+.online_reservation {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+form#checkinout {
+    width: 1200px;
+    /* height: 121px; */
+}
+
+.reservation {
+	width: 100%;
+	min-height: 150px;
+	margin: 0 5vw;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	-webkit-flex-basis: 100%;
+	margin: 2% auto;
+	display: flex;
+	box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-webkit-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-moz-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-o-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+}
+.reservation.medium {
+    flex-direction: column;
+    width: 75%;
+}
+.book_date {
+    position: relative;
+    width: 80%;
+}
+.booking-wrapper {
+    text-align: center;
+}
+.book_date.medium {
+    width: 135px;
+}
+i.fa.fa-calendar {
+    position: absolute;
+    top: 0.9em;
+    right: 1em;
+    color: inherit;
+    cursor: pointer;
+}
+
+.span1_of_1.submit-btn {
+    justify-content: space-evenly;
+}
+
+
+span.phoneRes {
+    padding: 0 1em;
+}
+.span1_of_1.submit-btn.medium {
+    padding: 1em;
+}
+span.booking-light {
+    color: #acacac;
+}
