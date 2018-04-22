@@ -3,10 +3,10 @@ Fully customizable booking and availability form
 This is an availability & booking plugin for wordpress with a setting page
 where you can customize all the aspects of the form, 
 
-###*add url for booking engine and post data there
-###*add text for title, subtitle, button,
-###*change colors with color picker for texts, background, button.
-###*select different form types
+###add url for booking engine and post data there
+###add text for title, subtitle, button,
+###change colors with color picker for texts, background, button.
+###select different form types
 
 You can change the style of the datepicker by going to https://jqueryui.com/themeroller/
 and simply edit or select an existing theme and replace the content of /css/jqery-ui.css file
