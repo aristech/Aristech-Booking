@@ -53,7 +53,7 @@ class AristechBooking {
 
     public function settings_link($links){
 
-        $settings_link = '<a href="admin.php?page=about_booking">Settings</a>';
+        $settings_link = '<a href="admin.php?page=aristech_booking">Settings</a>';
 
         array_push($links, $settings_link);
         return $links;
@@ -63,7 +63,7 @@ class AristechBooking {
     function aristech_admin_menu_option() 
     {
         wp_enqueue_media();
-        add_menu_page('Aristech Booking', 'Aristech Booking', 'manage_options', 'about_booking', 'aristech_scripts_page', 'dashicons-calendar-alt', 200);
+        add_menu_page('Aristech Booking', 'Aristech Booking', 'manage_options', 'aristech_booking', 'aristech_scripts_page', 'dashicons-calendar-alt', 200);
     }
 
     function enqueueWp() {
