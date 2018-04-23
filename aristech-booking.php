@@ -132,10 +132,12 @@ function my_custom_styles()
 .booking_room >h4 {
     color: '.get_option( 'aristech_color_tt', '' ).';
 }
-.booking_room {
-    background: '.get_option( 'aristech_color_tb', '' ).';
+.booking_room >p{
     color: '.get_option( 'aristech_color_st', '' ).';
-    background-image: url(' . wp_get_attachment_image_src( get_option( 'aristech_image','' ), $size = 'full')[0].');
+}
+.booking_room {
+    background: '.get_option( 'aristech_color_tb', '' ).';  
+    background-image: url(' . wp_get_attachment_image_src( get_option( 'aristech_image','' ), $size = 'full')[0].')no-repeat center center;
     background-size: 100%;
 }
 input#checkin-picker, input#checkout-picker, select#wh-adults, select#wh-children {

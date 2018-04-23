@@ -206,7 +206,7 @@ form#checkinout {
 }
 .book_date {
     position: relative;
-    width: 80%;
+    width: 150px;
 }
 .booking-wrapper {
     text-align: center;
@@ -236,3 +236,7 @@ span.phoneRes {
 span.booking-light {
     color: #acacac;
 }
+input#checkin-picker,input#checkout-picker {
+    width: 150px;
+}
+
