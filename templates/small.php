@@ -1,12 +1,6 @@
-<?php
-    $booking_url = get_option( 'aristech_booking_url', '' );
-    $title = get_option( 'aristech_title', '' );
-    $text = get_option( 'aristech_text', '' );
-    $btn = get_option( 'aristech_btn', '' );
-    $tel = get_option( 'aristech_tel', '' );
-    $template3 = '<div class="form-wrapper">
+<div class="form-wrapper">
     <div class="online_reservation">
-                <form id="checkinout" action="' . $booking_url . '" target="_blank">
+                <form id="checkinout" action="<?php echo $this->booking_url ?>" target="_blank">
                     <input type="hidden" name="checkin">
                     <input type="hidden" name="checkout">
                     
@@ -66,7 +60,7 @@
                             </div>
                             <div class="span1_of_1 submit-btn">
 
-                                    <input class="btn-booking" type="submit" value="' . $btn . '" />
+                                    <input class="btn-booking" type="submit" value="<?php echo $this->btn ?>" />
                                     
 
               
@@ -77,4 +71,4 @@
                     
                 </form>
             </div>
-            </div>';          
+            </div>       
