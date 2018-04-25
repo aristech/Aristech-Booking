@@ -48,7 +48,6 @@ class AristechBooking {
         $this->color_tt     = get_option( 'aristech_color_tt', '#acacac' );
         $this->color_tb     = get_option( 'aristech_color_tb', '#fff' );
         $this->color_st     = get_option( 'aristech_color_st', '#acacac' );
-        $this->color_sb     = get_option( 'aristech_color_sb', '' );
         $this->color_ft     = get_option( 'aristech_color_ft', '#acacac' );
         $this->color_fb     = get_option( 'aristech_color_fb', '#fff' );
         $this->color_bt     = get_option( 'aristech_color_bt', '#fff' );
@@ -82,7 +81,6 @@ class AristechBooking {
 
     function admin_menu_option() 
     {
-
         wp_enqueue_media();
         add_menu_page('Aristech Booking', 'Aristech Booking', 'manage_options', 'aristech_booking', array($this,'admin_page'), 'dashicons-calendar-alt', 200);
     }
@@ -94,17 +92,14 @@ class AristechBooking {
         wp_enqueue_style( 'wp-color-picker' );
         wp_register_style('jquery-ui', plugin_dir_url( __FILE__ ) . 'css/jquery-ui.css');
         wp_enqueue_style( 'jquery-ui' );
-        wp_enqueue_script( 'jquery-ui-datepicker', array( 'jquery' ), '', true );  
-        
+        wp_enqueue_script( 'jquery-ui-datepicker', array( 'jquery' ), '', true );          
         wp_enqueue_script( 'aristech_script', plugin_dir_url( __FILE__ ) . 'js/aristech_script.js',array(),'',true );
 
     }
 
     function enqueueAdmin() {
-
         wp_enqueue_style( 'wp-color-picker' );
         wp_enqueue_script( 'aristech_script', plugin_dir_url( __FILE__ ) . 'js/aristech_admin_script.js', array( 'wp-color-picker' ), false, true );
-
     }
 
     function update(){
@@ -130,15 +125,11 @@ class AristechBooking {
     }
 
     function aristech_booking() {
-        
-        $this->radio = get_option( 'aristech_radio', 'large' );
-
         ob_start();
         require_once plugin_dir_path( __FILE__ ). 'templates/'.$this->radio.'.php';
             $data = ob_get_contents();
         ob_end_clean();
         return $data;
-
      }
 
      function my_custom_styles(){
@@ -158,22 +149,16 @@ class AristechBooking {
             background-size: 100%;
         }
         input#checkin-picker, input#checkout-picker, select#wh-adults, select#wh-children {
-
             background: none;
             border: none;
             border-bottom: 1px solid '.$this->color_ft.';
         }
-
-
         .span1_of_1 > h5, .book_date, .book_date >input, .section_room >select, .phoneRes >a {
             color: '.$this->color_ft.';
         }
         input.btn-booking {
             color: '.$this->color_bt.';
-            background: '.$this->color_bb.';
-            
-        }
-            
+            background: '.$this->color_bb.';         
         }
         </style>';
     }
