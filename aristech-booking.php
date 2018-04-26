@@ -143,12 +143,19 @@ class AristechBooking {
         .booking_room >p{
             color: '.$this->color_st.';
         }
+<<<<<<< HEAD
         .booking_room {  
             background: '.$this->color_tb.';
             background-image: url('. $this->bgImage .');
             background-repeat: no-repeat;
             background-position: center;     
             background-width: 100%;
+=======
+        .booking_room {
+            background: '.$this->color_tb.';  
+            background-image: url('. $this->bgImage .')no-repeat center center;
+            background-size: 100%;
+>>>>>>> 320a0a1e894fb028c70ba180a76fd24ba2384a91
         }
         input#checkin-picker, input#checkout-picker, select#wh-adults, select#wh-children {
             background: none;
