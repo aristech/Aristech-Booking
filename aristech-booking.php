@@ -54,8 +54,8 @@ class AristechBooking {
         $this->color_bb     = get_option( 'aristech_color_bb', '#acacac' );
         $this->bgImage      = wp_get_attachment_image_src( get_option( 'aristech_image','' ), $size = 'full')[0];
         $this->name         = 'aristech_image';
-        $this->width        = 150;
-        $this->height       = 150;
+        $this->width        = 80;
+        $this->height       = 80;
         $this->options      = get_option( $this->name,'' );
         $this->default_image = plugin_dir_url(__FILE__). 'images/no-image.png';
 

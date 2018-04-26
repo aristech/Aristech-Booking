@@ -35,6 +35,8 @@ switch ($this->radio) {
     <h2> General Settings For Your Booking Form </h2>
     <p>Shortcode to use <strong>[aristech_booking]</strong></p>
     <form method="post" action="">
+    <div class="half" style="width:50%;float:left;">
+    <h2 style="text-align:center;"> Inputs </h2>
     <label for="booking_url">Booking url</label>
     <textarea name="booking_url" class="large-text"><?php print $this->booking_url ?></textarea>
     <label for="title">Title</label>
@@ -45,6 +47,8 @@ switch ($this->radio) {
     <textarea name="btn" class="large-text"><?php print $this->btn ?></textarea>
     <label for="tel">Phone number</label>
     <textarea name="tel" class="large-text"><?php print $this->tel ?></textarea>
+    </div>
+    <div class="half" style="width:50%; float:right">
     <table class="widefat">
         <tbody>
             <tr >
@@ -68,14 +72,13 @@ switch ($this->radio) {
                 </br>
                 </br>
                 </br>
-                <label>Image Background</label> 
                 <?php
                     echo '
                         <div class="upload">
                             <img data-src="' . $this->default_image . '" src="' . $src . '" width="' . $this->width . 'px" height="' . $this->height . 'px" />
                             <div>
                                 <input type="hidden" name="aristech_image" id="aristech_image" value="' . $value . '" />
-                                <button type="submit" class="upload_image_button button"> Upload </button>
+                                <button type="submit" class="upload_image_button button"> Image Background </button>
                                 <button type="submit" class="remove_image_button button">&times;</button>
                             </div>
                         </div>
@@ -133,7 +136,7 @@ switch ($this->radio) {
             
         </tbody>
     </table>
-    
+    </div>
     <input type="submit" name="submit_scripts_update" class="button button-primary" value="Save"</input>
     </form>
 </div> 
