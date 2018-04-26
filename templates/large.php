@@ -1,12 +1,6 @@
-<?php
-    $booking_url = get_option( 'aristech_booking_url', '' );
-    $title = get_option( 'aristech_title', '' );
-    $text = get_option( 'aristech_text', '' );
-    $btn = get_option( 'aristech_btn', '' );
-    $tel = get_option( 'aristech_tel', '' );
-    $template1 = '<div class="form-wrapper">
+<div class="form-wrapper">
     <div class="online_reservation">
-                <form id="checkinout" action="' . $booking_url . '" target="_blank">
+                <form id="checkinout" action="<?php echo $this->booking_url ?>" target="_blank">
                     <input type="hidden" name="checkin">
                     <input type="hidden" name="checkout">
                     
@@ -14,8 +8,8 @@
                         
                         <div class="reservation">
                             <div class="booking_room">
-                                <h4>' . $title . '</h4>
-                                <p>' . $text . '</p>
+                                <h4><?php echo $this->title ?></h4>
+                                <p><?php echo $this->text ?></p>
                             </div>
                             
                                 
@@ -70,11 +64,11 @@
                             </div>
                             <div class="span1_of_1 submit-btn">
 
-                                    <input class="btn-booking" type="submit" value="' . $btn . '" />
+                                    <input class="btn-booking" type="submit" value="<?php echo $this->btn ?>" />
                                     <div class="number">
                                         <span class="phoneRes" data-phone="'.$tel.'" data-url="'.$booking_url.'">
-                                            <a href="tel:'.$tel.'" hidefocus="true" style="outline: none;"><i class="fa fa-phone" aria-hidden="true"></i>
-                                                '.$tel.'
+                                            <a href="tel:<?php echo $this->tel ?>" hidefocus="true" style="outline: none;"><i class="fa fa-phone" aria-hidden="true"></i>
+                                            <?php echo $this->tel ?>
                                             </a>  
                                         </span>
                                     </div>
@@ -87,4 +81,4 @@
                     
                 </form>
             </div>
-            </div>';          
+            </div>        
